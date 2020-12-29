@@ -13,6 +13,6 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position += Camera.main.transform.forward * Time.deltaTime;
     }
 }
