@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class sceneSwitching : MonoBehaviour
 {
     public void ButtonStart()
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene(1);
     }
 
     public void ButtonCredit()
