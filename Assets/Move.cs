@@ -13,6 +13,10 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += Camera.main.transform.forward * Time.deltaTime *3;
+        transform.position += Camera.main.transform.forward * Time.deltaTime *3f;
+        if (Input.GetKey(KeyCode.Space))
+        {
+            transform.position += Camera.main.transform.up * Time.deltaTime * 15f;
+        }
     }
 }
